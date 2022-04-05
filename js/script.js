@@ -9,14 +9,12 @@
  */
 function calculate () {
   // input
-  const length = parseFloat(document.getElementById('length').value)
-  const width = parseFloat(document.getElementById('width').value)
-  const height = parseFloat(document.getElementById('height').value)
+  const radius = parseFloat(document.getElementById('radius').value)
 
   // process
   
-  const area = ( length * width * height ) / 3
+  const area = ( 1.333 * Math.PI * radius * radius * radius )
 
   // output
-  document.getElementById('area').innerHTML = 'Area is: ' + area.toFixed(2) + ' cm²'
+  document.getElementById('area').innerHTML = 'Volume is: ' + area.toFixed(2) + ' cm³'
 }
