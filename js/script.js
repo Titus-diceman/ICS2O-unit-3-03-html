@@ -13,7 +13,7 @@ function calculate () {
 
   // process
   
-  const volume = ( 1.333 * Math.PI * radius * radius * radius )
+  const volume = ( 4/3 * Math.PI * radius * radius * radius )
 
   // output
   document.getElementById('volume').innerHTML = 'Volume is: ' + volume.toFixed(2) + ' cm³'
